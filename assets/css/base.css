@@ -1,4 +1,6 @@
 :root{
+    --primary-color:#fe6432;
+    --primary-color-rgba:rgb(254, 100, 50);    
     --white-color:#fff;
     --black-color:#000;
     --text-color:#333;
@@ -35,5 +37,15 @@ html{
     }
     to{
         opacity: 1;
+    }
+}
+@keyframes headernotify{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
     }
 }
