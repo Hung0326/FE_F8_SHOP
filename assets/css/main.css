@@ -129,7 +129,9 @@
     background-color: var(--white-color);
     cursor: default;
     transform-origin: calc(100% - 20px) top;
+    will-change: opacity,transform;
     animation: headernotify ease-in 0.2s;
+    -webkit-animation: headernotify ease-in 0.2s;
     display: none;
 }
 
@@ -210,14 +212,24 @@
 .header__navbar-item--has-notify:hover .header__notify{
     display: block;
 }
-.header__notify::before{
+.header__notify::after{
     content: "";
-    /* display: block; */
+    display: block;
     width: 100%;
     height: 22px;
     position: absolute;
     right: 0;
     top:-18px;
+}
+.header__notify::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -29px;
+    right: 0px;
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
 }
 
 
