@@ -20,7 +20,7 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
+/*  */
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -34,8 +34,21 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
-
+/*  */
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6676%;
+}
+.grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+/*  */
 /* MODAL */
 .modal{
     position: fixed;
@@ -61,7 +74,7 @@ html{
 }
 /* Button style */
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -71,9 +84,10 @@ html{
     padding: 0 12px;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white-color);
 }
 .btn.btn--normal:hover{
     background-color: rgba(0, 0, 0, 0.1);
