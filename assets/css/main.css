@@ -86,6 +86,7 @@
     border-radius: 2px;
     display: none;
     animation: fadein ease 0.3s;
+    z-index: 1;
 }
 
 .header__qr::before{
@@ -832,3 +833,68 @@
 .app_content{
     padding-top: 36px;
 }
+.home-filter{
+    background-color: rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 2px;
+}
+.home-filter__page{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.home-filter__lable{
+    font-size: 1.4rem;
+    color: #555555;
+    margin-right: 16px;
+}
+
+.home-filter__btn{
+    min-width: 90px;
+    margin-right: 12px;
+}
+.home-filter__page-num{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0 22px 0 0;
+}
+.home-filter__page-current{
+    color: var(--primary-color);
+}
+.home-filter__page-btn{
+    background-color: var(--white-color);
+    text-decoration: none;
+    flex: 1;
+    display: flex;
+}
+.home-filter__page-control{
+    border-radius: 2px solid ;
+    overflow: hidden;
+    display: flex;
+    height: 36px;
+    width: 72px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.home-filter__page-btn:first-child{
+    border-right: 1px solid #eeeeee;
+}
+.home-filter__page-icon{
+    margin: auto;
+    font-size: 1.6rem;
+    color: #555;
+}
+.home-filter__page-btn--disable{
+    background-color: #f9f9f9;
+    cursor: default;
+}
+..home-filter__page-btn--disable .home-filter__page-icon{
+    color: #ccc;
+}
+/* .fa-angle-left,
+.fa-angle-right{
+    font-size: 1.5rem;
+    position: relative;
+    top: 1px;
+} */
