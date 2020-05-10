@@ -398,6 +398,7 @@
     cursor: default;
 }
 .header__cart-list{
+    z-index: 1;
     position: absolute;
     top: calc(100% + 4px);
     right: 1px;
